@@ -10,10 +10,37 @@ header{
       overflow: hidden;
       padding-left: 15px;
       padding-right: 15px;
-      color: rgba(20, 20, 20, 0.836); 
+      color: rgba(20, 20, 20, 0.856); 
      width: fit-content;
      height: 500px;
 }
+header{
+  animation:slideIn .5s linear;
+  }
+      
+  @keyframes slideIn{
+    0% {transform: translateY(200px);
+    animation-timing-function: ease-out;
+    }
+  
+    30%{transform: translateY(-40px);
+    animation-timing-function: ease-in;
+    }
+    60%{transform: translateY(10px);
+      animation-timing-function: ease-out
+    }
+    100%{transform: translateY(0);
+      animation-timing-function: ease-in;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .site-header .navbar-collapse {
+      padding:5px;
+      transition: all .5s ease-out;
+    }
+  }
+  
 
 .row {
     margin-bottom: 1rem;
@@ -51,9 +78,9 @@ header{
    }
 }
 
-footer{
-  
-}
+
+
+
 
 
 
